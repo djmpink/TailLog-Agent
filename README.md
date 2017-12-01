@@ -1,9 +1,7 @@
 # TailLog-Agent
 配合TailLog工具使用的代理服务程序（Java版）
 
-<p align="center">
-	<a href="http://www.taillog.cn">TailLog</a>
-</p>
+<a href="http://www.taillog.cn">TailLog</a>
 
 ### 功能作用：
 该程序主要实现两个功能：
@@ -22,9 +20,7 @@ TailLog <----> Agent <----> 日志文件
 
 * 下载最新发布jar包
 
-<p align="center">
-	<a href="https://github.com/djmpink/TailLog-Agent/releases/download/1.0.0/taillog-agent-1.0.0.jar">taillog-agent-1.0.0.jar</a>
-</p>
+<a href="https://github.com/djmpink/TailLog-Agent/releases/download/1.0.0/taillog-agent-1.0.0.jar">taillog-agent-1.0.0.jar</a>
 
 * 在运行目录下，添加配置文件：
 
