@@ -1,4 +1,4 @@
-# TailLog-Agent
+﻿# TailLog-Agent
 配合TailLog工具使用的代理服务程序（Java版）
 
 <a href="http://www.taillog.cn">TailLog</a>
@@ -42,4 +42,42 @@ ssh.server.log.password=123456
 ````
 java -jar taillog-agent-1.0.0.jar --spring.config.location=file:./config.properties
 ````
+
+
+### 源码打包
+
+````
+$ mvn package
+$ mvn install
+````
+
+### 接口说明
+
+开发人员可以根据以下接口自行实现代理程序
+
+* WebSocket访问地址：
+````
+ws://{ip}:{port}/websocket
+````
+
+默认端口：10091
+
+
+* 连接参数：
+````
+{
+    "ssh": {
+        "ip":"192.168.5.55",
+        "port":"22",
+        "username":"root",
+        "password":"123456"
+    },
+    "content": "tail -f /home/project/app.log" 
+}
+````
+参数说明：
+
+ssh：[选填] 被代理的服务器IP地址。客户端可以通过配置该信息指定访问的服务器。未填则使用代理配置的服务器信息
+
+content：[必填] 待执行的linux命令。客户端将发送"tail..."等命令获取日志内容
 
