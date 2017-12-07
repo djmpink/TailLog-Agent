@@ -3,7 +3,7 @@
 
 <a href="http://www.taillog.cn">TailLog</a>
 
-### 功能作用：
+### 一.功能作用：
 该程序主要实现两个功能：
 
 * 通过ssh协议访问日志服务器并读取日志
@@ -16,13 +16,13 @@ PC <----> 代理服务器 <----> 日志服务器
 
 TailLog <----> Agent <----> 日志文件
 
-### 部署
+### 二.部署
 
-* 下载最新发布jar包
+* Step-1: 下载最新发布jar包
 
 <a href="https://github.com/djmpink/TailLog-Agent/releases/download/1.0.0/taillog-agent-1.0.0.jar">taillog-agent-1.0.0.jar</a>
 
-* 在运行目录下，添加配置文件：
+* Step-2: 在运行目录下，添加配置文件
 
 config.properties
 
@@ -37,23 +37,25 @@ ssh.server.log.username=root
 ssh.server.log.password=123456
 ````
 
-* 运行：
+* Step-3: 运行
 
 ````
 java -jar taillog-agent-1.0.0.jar --spring.config.location=file:./config.properties
 ````
 
 
-### 源码打包
+### 三.使用源码打包
+
+配置内容和方式同上
 
 ````
 $ mvn package
 $ mvn install
 ````
 
-### 接口说明
+### 四.接口说明
 
-开发人员可以根据以下接口自行实现代理程序
+开发人员可以根据以下接口说明使用其他语言自行实现代理程序
 
 * WebSocket访问地址：
 ````
