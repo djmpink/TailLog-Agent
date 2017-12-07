@@ -1,20 +1,30 @@
 ﻿# TailLog-Agent
+
 配合TailLog工具使用的代理服务程序（Java版）
 
 <a href="http://www.taillog.cn">TailLog</a>
 
 ### 一.功能作用：
-该程序主要实现两个功能：
+
+1. 该程序主要实现两个功能：
 
 * 通过ssh协议访问日志服务器并读取日志
 
 * 提供WebSocket服务，输出日志信息
 
-其基本结构如下：
+2.其基本结构如下：
 
 PC <----> 代理服务器 <----> 日志服务器
 
 TailLog <----> Agent <----> 日志文件
+
+3.主要技术栈
+
+* <a href="http://projects.spring.io/spring-boot/">Spring Boot</a>
+
+* WebSocket
+
+* <a href="http://www.jcraft.com/jsch/">JSch</a>
 
 ### 二.部署
 
@@ -82,4 +92,6 @@ ws://{ip}:{port}/websocket
 ssh：[选填] 被代理的服务器IP地址。客户端可以通过配置该信息指定访问的服务器。未填则使用代理配置的服务器信息
 
 content：[必填] 待执行的linux命令。客户端将发送"tail..."等命令获取日志内容
+
+
 
