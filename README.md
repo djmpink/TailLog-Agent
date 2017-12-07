@@ -2,7 +2,14 @@
 
 配合TailLog工具使用的代理服务程序（Java版）
 
-<a href="http://www.taillog.cn">TailLog</a>
+![](image/agent.png)
+
+#### 了解TaiLog
+
+<a href="http://www.taillog.cn">TailLog首页</a>
+
+<a href="https://gitee.com/no7player/TeamStack">TailLog码云</a>
+
 
 ### 一.功能作用：
 
