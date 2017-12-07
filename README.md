@@ -1,10 +1,10 @@
 ﻿# TailLog-Agent
 
-配合TailLog工具使用的代理服务程序（Java版）
+配合TailLog（实时日志查看监控工具）使用的代理服务程序（Java版）
 
 ![](image/agent.png)
 
-#### 了解TaiLog
+#### 了解TaiLog——实时日志查看监控工具
 
 <a href="http://www.taillog.cn">TailLog首页</a>
 
